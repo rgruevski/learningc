@@ -2,9 +2,18 @@
 #include <math.h>
 int main() {
 
-    float p;
-    p = pow(2.0,8.0);
-    printf("2^8 = %f\n", p);
+    float a;
+    float b;
 
+    printf("Enter the first number: ");
+    scanf("%f", &a);
+
+    printf("Enter the second number: ");
+    scanf("%f", &b);
+
+    printf("%f + %f = %f\n", a,b,a+b);
+    printf("%f - %f = %f\n", a,b,a-b);
+    printf("%f * %f = %f\n", a,b,a*b);
+    printf("%f / %f = %f\n", a,b,a/b);
     return (0);
 }

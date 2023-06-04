@@ -1,11 +1,10 @@
 #include <stdio.h>
-// argc is the number of arguments passed into the program
-// argv is an array of pointers to the arguments
-int main(int argc, char *argv[]) {
+#include <math.h>
+int main() {
 
-  for (int i = 1; i < argc; i++) {
-    printf("Argument %d: %s\n", i, argv[i]);
-  }
+    float r;
+    r = sqrt(2.0);
+    printf("The square root of 2.0 is %f\n", r);
 
-  return 0;
+    return (0);
 }

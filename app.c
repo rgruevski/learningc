@@ -2,9 +2,9 @@
 #include <math.h>
 int main() {
 
-    float r;
-    r = sqrt(2.0);
-    printf("The square root of 2.0 is %f\n", r);
+    float p;
+    p = pow(2.0,8.0);
+    printf("2^8 = %f\n", p);
 
     return (0);
 }

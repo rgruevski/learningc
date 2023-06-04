@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int c;
+
+    int x;
     printf("Enter a Letter: ");
-    c = getchar();
-    printf("You entered: '%c' .\n", c);
+    
+    scanf("%d",&x);
+    printf("You entered: '%d'.\n",x);
+
     return (0);
 }

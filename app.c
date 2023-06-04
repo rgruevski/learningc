@@ -2,11 +2,12 @@
 
 int main() {
 
-    char password[15]; // 15 is the maximum number of characters that can be stored in the array
+    char input[64]; // 15 is the maximum number of characters that can be stored in the array
 
-    printf("Enter new password...");
-    scanf("%s", password); // %s is a format specifier for a string
-    printf("The password is: %s\n", password);
+    printf("Instructions: ");
+    fgets(input, 64, stdin); // 64 is the maximum number of characters that can be stored in the array, stdin is the standard input.
+    puts("Thank you, here are your instructions:");
+    puts(input); // prints the string
 
     return (0);
 }

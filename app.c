@@ -2,11 +2,9 @@
 
 int main() {
 
-    char x;
-    printf("Type a character: ");
-    
-    scanf("%c",&x); // %c represents character 
-    printf("You entered: '%c'.\n",x);
+    char password[] = "password";
+
+    printf("The password is: %s\n", password); // %s is a format specifier for a string
 
     return (0);
 }

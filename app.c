@@ -2,9 +2,11 @@
 
 int main() {
 
-    char password[] = "password";
+    char password[15]; // 15 is the maximum number of characters that can be stored in the array
 
-    printf("The password is: %s\n", password); // %s is a format specifier for a string
+    printf("Enter new password...");
+    scanf("%s", password); // %s is a format specifier for a string
+    printf("The password is: %s\n", password);
 
     return (0);
 }

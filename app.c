@@ -10,6 +10,9 @@ int main(int argc, char *argv[]) {
     {
         putchar(c);
         c++; // iterates on the indexes of the alphabet
+        if(c>10) {
+            break;
+        }
     }
     while (c != 'Z');
     putchar('\n');

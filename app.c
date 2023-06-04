@@ -3,23 +3,12 @@
 #include <math.h>
 int main(int argc, char *argv[]) {
 
-    char a = argv[1][0];
-    for (int i = 1; i < argc; i++) {
-        printf("Argument %d: %s\n", i, argv[i]);
-    }
+    int x;
 
-    switch(a) {
-        case 'A':
-            printf("The letter is A.\n");
-            break;
-        case 'B':
-            printf("The letter is B.\n");
-            break;
-        case 'C':
-            printf("The letter is C.\n");
-            break;
-        default:
-            printf("Input A, B, or C.\n");
+    x=10;
+    while(x > 0) {
+        printf("Number: %d\n", x);
+        x--;
     }
 
     return (0);

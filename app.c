@@ -2,18 +2,10 @@
 #include <math.h>
 int main() {
 
-    float a;
-    float b;
+    int a;
+    printf("Type an integer: ");
+    scanf("%d", &a);
+    if (a > 10) printf("%d is greater than 10.\n",a);
 
-    printf("Enter the first number: ");
-    scanf("%f", &a);
-
-    printf("Enter the second number: ");
-    scanf("%f", &b);
-
-    printf("%f + %f = %f\n", a,b,a+b);
-    printf("%f - %f = %f\n", a,b,a-b);
-    printf("%f * %f = %f\n", a,b,a*b);
-    printf("%f / %f = %f\n", a,b,a/b);
     return (0);
 }

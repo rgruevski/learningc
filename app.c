@@ -3,19 +3,10 @@
 #include <math.h>
 int main(int argc, char *argv[]) {
 
-    char c;
+    int x;
 
-    c = 'A';
-    do
-    {
-        putchar(c);
-        c++; // iterates on the indexes of the alphabet
-        if(c>10) {
-            break;
-        }
-    }
-    while (c != 'Z');
-    putchar('\n');
+    for(x=0;x<10;x++)
+        printf("%d\n",x);
 
     return (0);
 }

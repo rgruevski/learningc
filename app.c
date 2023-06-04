@@ -3,13 +3,16 @@
 #include <math.h>
 int main(int argc, char *argv[]) {
 
-    int x;
+    char c;
 
-    x=10;
-    while(x > 0) {
-        printf("Number: %d\n", x);
-        x--;
+    c = 'A';
+    do
+    {
+        putchar(c);
+        c++; // iterates on the indexes of the alphabet
     }
+    while (c != 'Z');
+    putchar('\n');
 
     return (0);
 }

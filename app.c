@@ -1,17 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-int main(int argc, char *argv[]) {
 
-    int x;
-    for(x=0;x<20;x++)
-        printf("%d\n",x+1);
+void blorf(int x);
 
-    x=-10;
-    while(x<=10) {
-        printf("%d\n",x);
-        x++;
-    }
+int main(int argc, char *argv[]) 
+{
+
+    puts("The main() function always runs first");
+    blorf();
+    blorf();
+    puts("Thanks, blorf(), I needed that.");
 
     return (0);
+}
+
+void blorf(void) //   
+{
+    if(x < 10)
+        printf("The value %d is less than 10\n", x);
+    else if(x > 10)
+        printf("The value %d is greater than 10\n", x);
+    else
+        printf("The value %d is equal to 10\n", x);
 }

@@ -1,26 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-void blorf(int x);
-
-int main(int argc, char *argv[]) 
+#define INPUT_MAX 16
+int main(int argc, char *argv[])
 {
+    char input[INPUT_MAX];
 
-    puts("The main() function always runs first");
-    blorf();
-    blorf();
-    puts("Thanks, blorf(), I needed that.");
+    printf("Instructions: ");
+    fgets(input,INPUT_MAX,stdin);
+    puts("Thank you! Here is your input:");
+    puts(input);
 
     return (0);
-}
-
-void blorf(void) //   
-{
-    if(x < 10)
-        printf("The value %d is less than 10\n", x);
-    else if(x > 10)
-        printf("The value %d is greater than 10\n", x);
-    else
-        printf("The value %d is equal to 10\n", x);
 }

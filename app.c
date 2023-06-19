@@ -1,13 +1,20 @@
 #include <stdio.h>
-#define INPUT_MAX 16
+#define MEALS 3
 int main(int argc, char *argv[])
 {
-    char input[INPUT_MAX];
+    int calories[MEALS];
+    int x,total;
 
-    printf("Instructions: ");
-    fgets(input,INPUT_MAX,stdin);
-    puts("Thank you! Here is your input:");
-    puts(input);
+    total = 0;
+    puts("Calorie Counter");
+
+    for (x = 0; x < MEALS; x++)
+    {
+        printf("Calories at meal %d: ", x + 1);
+        scanf("%d", &calories[x]);
+        total += calories[x];
+    }
+    printf("You had a total of %d calories.\n", total);
 
     return (0);
 }

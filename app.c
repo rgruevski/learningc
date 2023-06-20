@@ -1,10 +1,14 @@
 #include <stdio.h>
-#include <string.h>
 int main()
 {
     int a;
+    char b;
+    float c;
 
-    printf("The value of a is %d\n", a);
+    puts("Memory locations:");
+    printf("A is at %p\n",&a);
+    printf("B is at %p\n",&b);
+    printf("C is at %p\n",&c);
 
     return (0);
 }

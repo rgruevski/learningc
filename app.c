@@ -1,26 +1,29 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    struct bank {
-        int account;
-        float balance;
+    struct date {
+        int year;
+        int month;
+        int day;
     };
-    struct bank checking,savings;
+    struct person {
+        char name[32];
+        struct date birthday;
+    };
+    struct person friend;
 
-    checking.account = 1234;
-    checking.balance = 567.89;
-    savings.account = 9876;
-    savings.balance = 543.21;
+    strcpy(friend.name, "Robert Gruevski");
+    friend.birthday.year = 1993;
+    friend.birthday.month = 1;
+    friend.birthday.day = 2;
 
-    printf("Checking account %d has a balance of %f\n",
-        checking.account, 
-        checking.balance
+    printf("My friend %s was born on %d/%d/%d\n",
+        friend.name,
+        friend.birthday.year,
+        friend.birthday.month,
+        friend.birthday.day
     );
-
-    printf("Savings account %d has a balance of %f\n",
-        savings.account, 
-        savings.balance
-    );    
 
     return (0);
 }

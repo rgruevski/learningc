@@ -1,20 +1,18 @@
 #include <stdio.h>
-#define MEALS 3
-int main(int argc, char *argv[])
+int main()
 {
-    int grid[3][3];
-    int row,col;
+    struct bank {
+        int account;
+        float balance;
+    };
+    struct bank checking;
 
-    for(row=0;row<3;row++)
-        for(col=0;col<3;col++)
-            grid[row][col] = row*col;
+    checking.account = 1234;
+    checking.balance = 567.89;
 
-    grid[2][2] = 99;
-
-    for(row=0;row<3;row++)
-        for(col=0;col<3;col++)
-            printf("grid[%d][%d] = %d\n",row,col,grid[row][col]);
-            putchar('\n');
+    printf("Checking account %d has a balance of %f\n",
+        checking.account, 
+        checking.balance);
 
     return (0);
 }

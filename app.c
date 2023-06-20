@@ -1,14 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int a,b;
-    int *ptr;
+    char a,b,c,*p;
 
-    a = 1234;
-    ptr = &a;
-    b = *ptr;
+    a = 'A';
+    p = &a;
+    b = *p;
+    p = &c;
 
-    printf("A is %d and B is %d\n",a,b);
+    *p = 'Z';
+
+    printf("a = %c, b = %c, c = %c\n", a, b, c);
 
     return (0);
 }

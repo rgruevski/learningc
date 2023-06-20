@@ -1,13 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int pokey;
-    int *p;
+    int a,b;
+    int *ptr;
 
-    p = &pokey;
+    a = 1234;
+    ptr = &a;
+    b = *ptr;
 
-    printf("The address of `pokey` is %p\n", &pokey);
-    printf("The address of `pokey` is %p\n", &p);
+    printf("A is %d and B is %d\n",a,b);
 
     return (0);
 }

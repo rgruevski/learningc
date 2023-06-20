@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int a;
-    char b;
-    float c;
+    int pokey;
+    int *p;
 
-    puts("Memory locations:");
-    printf("A is at %p\n",&a);
-    printf("B is at %p\n",&b);
-    printf("C is at %p\n",&c);
+    p = &pokey;
+
+    printf("The address of `pokey` is %p\n", &pokey);
+    printf("The address of `pokey` is %p\n", &p);
 
     return (0);
 }

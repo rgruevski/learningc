@@ -5,16 +5,17 @@
 
 int main()
 {
-    char *sto;
-    sto = malloc(sizeof(char)*SIZE);
-    if( sto == NULL)
+    char *name;
+    name = malloc(sizeof(char)*SIZE);
+    if( name == NULL)
     {
         puts("Memory allocation failed");
         return(1);
     }
-    else {
-        printf("%d bytes of memory allocated at %p\n", SIZE, sto);
-    }
+
+    printf("Enter your name: ");
+    fgets(name,SIZE,stdin);
+    printf("Pleased to meet you, %s", name);
 
     return (0);
 }

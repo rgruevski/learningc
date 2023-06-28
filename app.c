@@ -1,15 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+#define SIZE 512
+
 int main()
 {
-    char a,b,c,*p;
-
-    a = 'A';
-    p = &a;
-    b = *p;
-    p = &c;
-    *p = 'Z';
-
-    printf("a = %c, b = %c, c = %c\n", a, b, c);
+    char *sto;
+    sto = malloc(sizeof(char)*SIZE);
+    if( sto == NULL)
+    {
+        puts("Memory allocation failed");
+        return(1);
+    }
+    else {
+        printf("%d bytes of memory allocated at %p\n", SIZE, sto);
+    }
 
     return (0);
 }
